@@ -2,25 +2,25 @@ package main;
 
 public class Attributes {
 
-		public int hitPointsMax, hitPointsCurrent, shield, movement, damage;
+	
+		public int hitPointsMax,  shield, movement, damage, hitPointsCurrent; //not needed for setup
 	
 
 	/**
-	 * @param hpm
-	 * @param hpc
+	 * @param hpm	 
 	 * @param sh
 	 * @param move
 	 * @param dmg
 	 * 
 	 * Overloaded constructor to set all values when the class is initialised
 	 */
-	public Attributes(int hpm, int hpc, int sh, int move, int dmg) {
+	/*public Attributes(int hpm, int hpc, int sh, int move, int dmg) {
 		hitPointsMax = hpm;
 		hitPointsCurrent = hpc;
 		shield = sh;
 		movement = move;
 		damage = dmg;
-	}
+	} Not sure if this overloading constructor is necessary */
 
 	/**
 	 * setHitPointsMax Set the Value of HitPointsMax
@@ -33,7 +33,7 @@ public class Attributes {
 	 * getHitPointMax Returns the value of HitPointsMax
 	 */
 	public int getHitPointMax() {
-		return 0;
+		return hitPointsMax;
 	}
 
 	/**
@@ -47,21 +47,22 @@ public class Attributes {
 	 * getHitPointMax Returns the value of HitPointsCurrent
 	 */
 	public int getHitPointCurrent() {
-		return 0;
+		return hitPointsMax;
 	}
 
 	/**
 	 * setHitPointsMax Set the Value of Shield
-	 */
+	*/
 	public void setShield(int sh) {
 		shield = sh;
 	}
+	 //not needed for startup
 
 	/**
 	 * getHitPointMax Returns the value of Shield
 	 */
-	public int getSheild() {
-		return 0;
+	public int getShield() {
+		return shield;
 	}
 
 	/**
@@ -75,7 +76,7 @@ public class Attributes {
 	 * getHitPointMax Returns the value of Movement
 	 */
 	public int getMovement() {
-		return 0;
+		return movement;
 	}
 
 	/**
@@ -89,7 +90,7 @@ public class Attributes {
 	 * getHitPointMax Returns the value of Movement
 	 */
 	public int getDamage() {
-		return 0;
+		return damage;
 	}
 
 }
